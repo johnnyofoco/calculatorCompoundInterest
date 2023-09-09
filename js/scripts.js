@@ -158,7 +158,7 @@ select_period.addEventListener("change", function () {
  * [OK] Validar digitação em cada input
  * [OK] Trocar o campo perídodo
  * [OK] Criar a função que irá montar a expressão matemática ex: {"expr": "20 * (((1 + 3.80) ^ 24 - 1) / 3.80)"}
- * Criar função que irá utilizar o fetch API para consumir os dados da api MathJS http://api.mathjs.org/v4/ com o JSON body acima
+ * [OK]Criar função que irá utilizar o fetch API para consumir os dados da api MathJS http://api.mathjs.org/v4/ com o JSON body acima
    e preencher a variavel result
- * Subir o projeto no gitHub e GitHubpages
+ * [OK]Subir o projeto no gitHub e GitHubpages
  */
