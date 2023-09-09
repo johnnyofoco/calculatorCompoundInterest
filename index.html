@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Juros Compostos</title>
+
+  <link rel="stylesheet" href="css/style.css">  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div id="calc-container">
+      <h2>Calculadora de Juros Compostos (R$ Investidos)</h2>
+      <form id="fees-form" action="#">
+
+        <div class="forms-inputs">
+          <div class="form-control">
+            <label for="name">Seu nome:</label>
+            <input 
+              type="text" 
+              name="name" 
+              id="name" 
+              placeholder="Digite seu nome"
+              maxlength="50"
+              required              
+            />
+          </div><!--form-control name-->
+          <div class="form-control">
+            <label for="mensalDeposit">Depósito Mensal:</label>
+            <input 
+              type="text" 
+              name="mensalDeposit" 
+              id="mensalDeposit" 
+              placeholder="Exemplo: R$ 20,00"
+              maxlength="10"
+              required
+            />
+          </div><!--form-control mensalDeposit-->
+          <div class="form-control">
+            <label for="interestRate">Taxa de Juros(ao mês):</label>
+            <input 
+              type="text" 
+              name="interestRate" 
+              id="interestRate" 
+              placeholder="Exemplo: 3.80%"
+              required
+            />
+          </div><!--form-control interestRate-->   
+          
+          <div class="form-control">
+          <label for="period">Período:</label>
+          <select id="period" name="period" required>
+            <option value="" selected disabled></option>
+            <option value="1">1 Ano</option>
+            <option value="2">2 Anos</option>
+            <option value="3">3 Anos</option>
+            <option value="4">4 Anos</option>
+          </select>
+        </div>
+
+          <!--<div class="form-control">
+            <label for="period">Período:</label>
+            <input 
+              type="text" 
+              name="period" 
+              id="period" 
+              placeholder="Exemplo: 2 anos"
+            />
+          </div> form-control period-->         
+
+        </div><!--forms-inputs-->
+
+        <div class="action-control">
+          <button id="calc-btn">Simular</button>
+          <button id="clear-btn">Limpar</button>
+        </div>
+      </form><!--fees-form-->
+    </div><!--calc-container-->
+
+    <div id="result-container" class="hide">
+      <h3>Resultado:</h3>
+      <p id="fees-name">Olá: <span></span>,</p>
+      <p id="fees-mensalDeposit">investindo R$ <span></span> todos os meses</p>
+      <p id="fees-interestRate">com uma taxa de juros de <span></span>%</p>
+      <p id="fees-period">durante <span></span> ano(s).</p>
+      <p id="fees-finalResult">você terá ao final um montante de R$ <span></span>.</p>
+            
+      <button id="back-btn">Simular Novamente</button>
+    </div><!--result-container-->
+
+  </div><!--container-->
+</body>
+</html>

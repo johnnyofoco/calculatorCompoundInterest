@@ -1,0 +1,141 @@
+/*########### GLOBAL ###########*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  background-color: #e4a316;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.hide{
+  display: none !important;
+}
+
+.container{
+  min-width: 400px;
+  min-height: 400px;
+  background-color: #ce7114;
+  padding: 2rem;
+}
+
+/*########### IMC Form ###########*/
+#calc-container h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.forms-inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-control{
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.form-control label{
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  color: #ccc;
+}
+
+.form-control input{
+  padding: 1rem 0.5rem;
+}
+
+.form-control select{
+  padding: 1rem 0.5rem;
+}
+
+.action-control {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+button{
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  background-color: #096215;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+#clear-btn{
+  background-color: #444;
+}
+
+/*########### IMC Form ###########*/
+
+#result-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#result-container h3{
+  margin-top: 2rem;
+  color: #dfdfdf;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+#result-container p{
+  font-size: 1.4rem;
+  color: #dfdfdf;
+}
+
+#result-container p span{
+  font-size: 1.4rem;
+  color: #ea0f0f;
+}
+
+.table-header{
+  font-weight: bold;
+  color: #ccc;
+}
+
+.table-header,
+.table-data{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #444;
+}
+
+.table-header h4,
+.table-data p {
+  flex: 1;
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3){
+  max-width: 80px;
+}
+
+#back-btn{
+  margin-top: 25px;
+  align-self: center;
+}
